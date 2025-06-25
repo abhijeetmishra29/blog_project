@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Home</title>
+</head>
+<body>
+  <h1>All Blog Posts</h1>
+  <a href="{% url 'create-post' %}">Create New Post</a>
+  <hr>
+  {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content|truncatechars:100 }}</p>
+    <a href="{% url 'post-detail' post.pk %}">Read More</a>
+    <hr>
+  {% empty %}
+    <p>No blog posts found.</p>
+  {% endfor %}
+</body>
+</html>

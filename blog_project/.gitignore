@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database files (if accidentally created)
+db.sqlite3
+*.sqlite3
+
+# Environment variables and secret files
+.env
+
+# Log files
+*.log
+
+# Translation files (optional)
+*.pot
+
+# Editor specific
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
